@@ -8,4 +8,4 @@ SELECT [id]
 FROM [dbo].[events]
 WHERE [userId] = @userId
 ORDER BY 
-      [startDate], [startTime]
+      [startDate], [startTime];

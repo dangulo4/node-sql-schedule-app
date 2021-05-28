@@ -1,7 +1,7 @@
-use master
+/*use master
 GO
 
 create DATABASE calendar;
-GO
+GO*/
 
 

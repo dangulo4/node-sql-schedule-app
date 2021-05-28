@@ -1,4 +1,4 @@
-USE calendar;
+/*USE calendar;
 -- droping table if it exists
 DROP TABLE IF EXISTS events;
 
@@ -28,3 +28,4 @@ INSERT INTO events
 VALUES
   ('userTest', N'appointment', N'description stuff', '2021-05-26', '13:00', NULL, NULL ),
   ('userTest2', N'appointment', N'meeting', '2021-05-27', '15:00', '2021-05-27', '15:30')
+  */

@@ -39,7 +39,7 @@ module.exports = {
   port: PORT,
   host: HOST,
   url: HOST_URL,
-  cookiePws: COOKIE_ENCRYPT_PWD,
+  cookiePwd: COOKIE_ENCRYPT_PWD,
   sql: {
     server: SQL_SERVER,
     database: SQL_DATABASE,

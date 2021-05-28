@@ -8,7 +8,7 @@ const register = async ({ sql, getConnection }) => {
 
   const getEvents = async (userId) => {
     // get a connection to SQL server
-    const cnx = await cnx.request();
+    const cnx = await getConnection();
 
     // create a new request
     const request = await cnx.request();

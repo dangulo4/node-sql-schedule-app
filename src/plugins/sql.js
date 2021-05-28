@@ -13,7 +13,7 @@ module.exports = {
     // create an instance of the database client
     const client = await dataClient(server, config);
 
-    // expose the client so the sever is available
+    // expose the database client so the sever is available
     server.expose('client', client);
   },
 };

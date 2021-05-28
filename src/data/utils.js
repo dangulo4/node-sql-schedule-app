@@ -15,12 +15,18 @@ const loadSqlQueries = async (folderName) => {
 
   // loop over the files and read in their contents
   const queries = {};
-  sqlFiles.map((sqlFile) => {
+  // sqlFiles.map((sqlFile) => {
+  //   const query = fse.readFileSync(join(filePath, sqlFiles[i]), {
+  //     encoding: 'UTF-8',
+  //   });
+  //   queries[sqlFile.replace('.sql', '')] = query;
+  // });
+  for (let i = 0; i < sqlFiles.length; i++) {
     const query = fse.readFileSync(join(filePath, sqlFiles[i]), {
       encoding: 'UTF-8',
     });
-    queries[sqlFile.replace('.sql', '')] = query;
-  });
+    queries[sqlFiles[i].replace('.sql', '')] = query;
+  }
   return queries;
 };
 
