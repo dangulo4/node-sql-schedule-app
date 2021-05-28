@@ -1,14 +1,10 @@
 'use strict';
 
+const config = require('./config');
 const server = require('./server');
 
 const startServer = async () => {
   try {
-    // todo: move configuration to seperate config
-    const config = {
-      host: 'localhost',
-      port: 5000,
-    };
     // create an instance of the server application
     const app = await server(config);
 
