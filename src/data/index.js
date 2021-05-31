@@ -18,8 +18,8 @@ const client = async (server, config) => {
       // error closing the connection, set the pool to null to ensure a new one will be created by getConnection()
       pool = null;
       console.log(err);
-      // server.log(['error', data], 'closePool error');
-      // server.log(['error', 'data'], err);
+      server.log(['error', data], 'closePool error');
+      server.log(['error', 'data'], err);
     }
   };
 
@@ -36,8 +36,8 @@ const client = async (server, config) => {
       // cath any connection errors and close the pool
       pool.on('error', async (err) => {
         console.log(err);
-        // server.log(['error', 'data'], 'connection pool error');
-        // server.log(['error', 'data'], err);
+        server.log(['error', 'data'], 'connection pool error');
+        server.log(['error', 'data'], err);
         await closePool();
       });
       return pool;

@@ -1,0 +1,28 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+      ><i class="material-icons">menu</i></a
+    >
+    <ul class="Left hide-on-med-and-down">
+      <% if ( auth.isAuthenticated ) { %>
+      <li><a href="/logout">Logout</a></li>
+      <% } else { %>
+      <li><a href="/login">Login</a></li>
+      <% } %>
+    </ul>
+  </div>
+</nav>
+<ul class="sidenav" id="mobile-demo">
+  <% if ( auth.isAuthenticated ) { %>
+  <li><a href="/logout">Logout</a></li>
+  <% } else { %>
+  <li><a href="/login">Login</a></li>
+  <% } %>
+</ul>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+</script>
