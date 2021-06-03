@@ -3,5 +3,5 @@
 
   [[redirects]]
   from = "/*"
-  to = "/Index.ejs"
+  to = "/Index.js"
   status = 200
