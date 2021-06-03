@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "/templates/layout.ejs"
-  status = 200
