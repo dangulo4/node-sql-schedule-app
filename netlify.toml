@@ -3,5 +3,5 @@
 
   [[redirects]]
   from = "/*"
-  to = "/templates/Index.ejs"
+  to = "/templates/layout.ejs"
   status = 200
