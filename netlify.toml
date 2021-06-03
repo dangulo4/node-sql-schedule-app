@@ -3,5 +3,5 @@
 
   [[redirects]]
   from = "/*"
-  to = "/App.vue"
+  to = "/Index.ejs"
   status = 200
